@@ -1,0 +1,78 @@
+.container {
+  display: inline-grid;
+  grid-template: 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px;
+  background-color: lightblue;  
+}
+
+.room {
+  border: 1px solid;
+  font-size: 50%;
+  text-align: center;
+}
+#living-room{
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+#kitchen{
+  grid-row-start: 2;
+  grid-row-end: 6;
+  background-color: blue;
+}
+#bedroom{
+  grid-row: 2 / -2;
+
+  grid-column: 2/4;
+  background-color: grey;
+}
+#bathroom{
+  /* grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  
+  grid-area: grid-row-start / grid-column-start/ grid-row-end/ grid-column-end
+  */
+  grid-area: 5 / 2 / 6 / 4;
+  background-color: brown;
+}
+#closet{
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  background-color: yellow;
+}
+
+.container2 {
+  display: inline-grid;
+  grid-template: 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px;
+  background-color: lightblue;  
+  grid-template-areas: 
+  "k1 k1 k1 bd1 bd1 c1"
+  "k1 k1 k1 bd1 bd1 c1"
+  "lr1 lr1 lr1 bd1 bd1 c1"
+  "lr1 lr1 lr1 bth1 bth1 bth1"
+  "lr1 lr1 lr1 bth1 bth1 bth1";
+}
+.room {
+  border: 1px solid;
+  font-size: 50%;
+  text-align: center;
+}
+
+#living-room1{
+  grid-area: lr1;
+}
+#kitchen1{
+  grid-area: k1;
+}
+#closet1{
+  grid-area: c1;
+}
+#bathroom1{
+  grid-area: bth1;
+}
+#bedroom1{
+  grid-area: bd1;
+}
+

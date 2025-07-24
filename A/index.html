@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="color: black">
+
+  <form action="somewhere-nowhere/" method="post">
+    <p>The fields marked by 
+      <strong>
+        <span aria-label="required">*</span>
+      </strong>
+    </p>
+
+    <section>
+      <h2>Contact Information</h2>
+      <fieldset>
+        <legend>Game Title</legend>
+        <ul>
+          <li>
+            <label for="title_1">
+              <input type="radio" id="title_1" name="title">ace
+            </label>
+          </li>
+
+          <li>
+            <label for="title_2">
+              <input type="radio" id="title_2" name="title">spade
+            </label>
+          </li>
+
+          <li>
+            <label for="title_3">
+              <input type="radio" id="title_3" name="title">king
+            </label>
+          </li>
+
+          <li>
+            <label for="title_4">
+              <input type="radio" id="title_4" name="title">queen
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <p>
+        <label for="firstname">
+        First Name: 
+        <strong><span aria-label="required">*</span></strong>
+        <input type="text" id="firstname" name="firstname">
+      </label>
+      </p>
+
+      <p>
+        <label for="lastname">
+        Last Name: 
+        <strong><span aria-label="required">*</span></strong>
+        <input type="text" id="lastname" name="lastname">
+      </label>
+      </p>
+
+      <p>
+        <label for="email">
+        Email: 
+        <strong><span aria-label="required">*</span></strong>
+        <input type="email" id="email" name="email">
+      </label>
+      </p>
+
+      <p>
+        <label for="pwd">
+        Password: 
+        <strong><span aria-label="required">*</span></strong>
+        <input type="password" id="pwd" name="password">
+      </label>
+      </p>
+
+      <fieldset>
+        <legend>Payment Information</legend>
+
+        <label for="payment-type">
+          Payment-type:
+          <strong><span aria-label="required">*</span></strong>
+          <select name="payment-type" id="payment-type">
+            <option value="CreditCard">Credit Card</option>
+            <option value="DebitCard">Debit Card</option>
+            <option value="cash-on-del">Cash on Delivery</option>
+          </select>
+        </label>
+
+        
+      </fieldset>
+    </section>
+
+
+
+    
+  </form>
+
+</body>
+</html>

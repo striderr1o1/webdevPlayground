@@ -1,0 +1,12 @@
+body{
+  text-align: center;
+}
+form{
+  display: inline-block;
+  width: auto;
+  max-width: 400px;
+ 
+}
+ul{
+  text-align: start;
+}
