@@ -45,3 +45,51 @@ mustafa.saySmth()
 
 console.log(player1.hasOwnProperty('valueOf'));// false, because player1 does not has its own valueOf property
 console.log(Object.prototype.hasOwnProperty('valueOf')); // true, because Object has its own valueOf property
+console.log(Object.getPrototypeOf(Object.prototype))
+
+let y = new Array(3)
+
+console.log(y);
+console.log(y.__proto__)
+console.log(y.__proto__.__proto__); //goes back to object
+
+console.log(y instanceof Array);
+console.log(Array instanceof Object)
+//############################################################################################################################
+// Initialize constructor functions
+function Hero(name, level) {
+  this.name = name;
+  this.level = level;
+}
+
+function Warrior(name, level, weapon) {
+  Hero.call(this, name, level);
+
+  this.weapon = weapon;
+}
+
+function archer(name, level, ability) {
+  Hero.call(this, name, level);
+
+  this.ability = ability;
+}
+
+// Link prototypes and add prototype methods
+Object.setPrototypeOf(Warrior.prototype, Hero.prototype);
+Object.setPrototypeOf(archer.prototype, Hero.prototype);
+
+Hero.prototype.greet = function () {
+  return `${this.name} says hello.`;
+}
+
+Warrior.prototype.attack = function () {
+  return `${this.name} attacks with the ${this.weapon}.`;
+}
+
+archer.prototype.heal = function () {
+  return `${this.name} casts ${this.spell}.`;
+}
+
+// Initialize individual character instances
+const hero1 = new Warrior('Bjorn', 1, 'axe');
+const hero2 = new archer('Kanin', 1, 'cure');
