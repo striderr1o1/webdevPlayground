@@ -20,5 +20,8 @@ let pockets = {
 };
 
 //SOME OBSERVATIONS ON PROTOTYPAL INHERITANCE
-// head --> table --> bed --> pockets
+// head <-- table <-- bed <-- pockets 
 //pocket inherits from bed, bed from table, table from head, head from Object
+//head is prototype of table
+//table is prototype of bed
+//bed is prototype of pockets
