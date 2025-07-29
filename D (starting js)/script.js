@@ -95,3 +95,4 @@ const hero1 = new Warrior('Bjorn', 1, 'axe');
 const hero2 = new archer('Kanin', 1, 'cure');
 
 console.log(hero1.greet())
+

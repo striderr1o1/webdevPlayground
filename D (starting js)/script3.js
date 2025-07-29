@@ -19,3 +19,6 @@ let pockets = {
   __proto__: bed
 };
 
+//SOME OBSERVATIONS ON PROTOTYPAL INHERITANCE
+// head --> table --> bed --> pockets
+//pocket inherits from bed, bed from table, table from head, head from Object

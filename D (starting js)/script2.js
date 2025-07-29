@@ -18,3 +18,4 @@ let longEar = {
 // walk is taken from the prototype chain
 longEar.walk(); // Animal walk
 alert(longEar.jumps); // true (from rabbit)
+
