@@ -39,5 +39,12 @@ const {location, age} = obj1;
 console.log(location);
 console.log(age);
 
+const array = [1,2,3,4,5];
+const [a,b,c,d,e] = array;
+console.log(e); //logs 5
+console.log(c); //logs 3
+
+
+
 
 
