@@ -1,3 +1,4 @@
+//اللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ
 //ES6 modules export/import
 
 //method 1

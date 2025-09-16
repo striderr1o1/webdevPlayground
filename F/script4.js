@@ -9,14 +9,19 @@ class Animal {
 }
 
 class Dog extends Animal {
-  constructor(name) {
+  constructor(name, type) {
     super(name); // call the super class constructor and pass in the name parameter
+    this.type = type;
   }
 
   speak() {
     console.log(`${this.name} barks.`);
   }
+  species(){
+    console.log(this.name + "\n" + this.type);
+  }
 }
 
-const d = new Dog("Mitzie");
+const d = new Dog("Mitzie", "dog");
 d.speak(); // Mitzie barks.
+d.species();
